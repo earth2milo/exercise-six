@@ -6,8 +6,8 @@ const Header = () => {
         <header className={styles.Header}>
             <nav className={styles.HeaderNav}>
                 <Link href="/">User Profile</Link>
-                <Link href="/">Login User</Link>
-                <Link href="/">Create Profile </Link>
+                <Link href="/login">Login User</Link>
+                <Link href="/create">Create Profile </Link>
 
                 </nav>
         </header>

@@ -1,7 +1,21 @@
-const createLoginForm = () => {
-    return ( 
-     <h2> Login User</h2>
+import styles from "./components.module.css"; 
+
+
+const LoginForm = () => {
+    return (
+        <div>
+            <h2>Login Form</h2>
+            <form className={styles.form}>
+                <label htmlFor= "email">Email</label>
+                <input type="email" name="email" />
+
+                <label htmlFor= "pass">Password</label>
+                <input type="password" name="pass" />
+
+                <button type= "submit">Create User</button>            
+            </form>
+        </div>
     )
- }
- 
- export default createLoginForm;
+}
+
+export default LoginForm
