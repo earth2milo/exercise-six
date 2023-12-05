@@ -10,14 +10,13 @@ import UserProfile from '@/app/components/UserProfile';
 
 export default function userProfile({ isLoggedIn, userInformation}){ 
    const router=useRouter();
-    
+
     useEffect(() => {
       if (!isLoggedIn) router.push("/login")
 },[isLoggedIn]);
 
 return(
     <>
-    <Header />
     <main>
     <h1>User Profile</h1>
     <UserProfile user={userInformation} />
